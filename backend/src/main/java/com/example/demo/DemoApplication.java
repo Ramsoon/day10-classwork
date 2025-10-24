@@ -15,6 +15,7 @@ public class DemoApplication {
 }
 
 @Entity
+@Table(name = "users")
 class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
