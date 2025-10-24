@@ -16,7 +16,7 @@ FROM openjdk:11-jre-slim
 
 WORKDIR /app
 
-COPY --from=build /app/target/demo-1.0.0.jar .
+COPY --from=build /app/target/demo-1.0.0.jar app.jar
 
 EXPOSE 8080
 
