@@ -9,7 +9,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 #second stage
-FROM openjdk:11-jre
+FROM openjdk:11
 
 WORKDIR /app
 
